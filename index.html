@@ -10,27 +10,82 @@
 
     <style>
         body {
-            background: rgb(234, 9, 197);
-            background: linear-gradient(90deg, rgba(234, 9, 197, 1) 35%, rgba(132, 6, 112, 1) 100%);
+            background: rgb(156, 70, 125);
+            background: linear-gradient(90deg, rgba(156, 70, 125, 1) 35%, rgba(161, 7, 240, 1) 100%);
+            margin: 90px;
+        }
+
+        p.type {
+            font-style: bold;
+            color: #e692c1;
+
+        }
+
+        .leftpane {
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .rightpane {
+            display: flex;
+            flex-direction: column;
+        }
+
+        p.text,
+        h1 {
+            color: #e692c1;
+        }
+
+        img {
+            width: 450px;
+            height: auto;
+        }
+
+        .flexbox {
+            display: flex;
+
+        }
+
+        .icon {
+            color: #e692c1;
+            font-size: 3rem;
+        }
+
+        .type {
+            color: white;
+            font-style: bold;
+            font-size: 2rem;
+            padding-left: 30px;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h1>OP PAD ALS SYNTRA FULLSTACK DEVS</h1>
-        <div>
-            <p class="type"><i class="fa-regular fa-image"></i>CSS3</p>
-            <p>Onze spuuglelijke HTML wordt netjes overgoten met mooie kleurtjes,achtergronden, font's en zoveel meer...
-            </p>
-        </div>
-        <div>
-            <p class="type"><i class="fa-solid fa-code"></i>HTML</p>
-            <p>De basic bouwblokjes van het internet sinds... Jawel 1993.</p>
-            <p>Hotter dan ooit en nu ook in onze skillset...</p>
+    <div class="flexbox">
+
+        <div class="leftpane">
+            <h1>OP PAD ALS SYNTRA FULLSTACK DEVS</h1>
+            <div>
+                <span class="icon"><i class="fa-regular fa-image"></i></span>
+                <span class="type">CSS3</span>
+                <p class="text">Onze spuuglelijke HTML wordt netjes overgoten met mooie kleurtjes,achtergronden, font's
+                    en
+                    zoveel meer...</p>
+            </div>
+            <div>
+                <span class="icon"><i class="fa-solid fa-code"></i></span>
+                <span class="type">HTML</span>
+                <p class="text">De basic bouwblokjes van het internet sinds... Jawel 1993.</p>
+                <p class="text">Hotter dan ooit en nu ook in onze skillset...</p>
+            </div>
         </div>
 
-        <div><img src="laptop.jpg"></div>
+        <div class="rightpane">
+            <img src="macbook.png">
+        </div>
+
     </div>
 
 </body>
